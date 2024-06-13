@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-image">
+
+    </div>
+</body>
+
+<style>
+
+    .background-image {
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-repeat: repeat;
+        width: 1480px;
+        height:100vh;
+        z-index: -10;
+        position: absolute;
+        top: 0;
+       left: 0;
+    }
+    </style>
+
+    <header>
+        <h2 class="Resume Analyzer">Resume Analyzer</h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="features.html">Features</a>
+            <a href="upload.html">Upload</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html" class="btnlogin-popup" id="loginButton">Login</button></a>
+        </nav>
+    </header>
+    <div class="'wrapper">
+    <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+    </div>
+
+    <div class="form-box Contact">
+        <h2>Contact Us</h2>
+        <form action="#"method="post">
+            <div class="input-box">
+                <input type="text" id="name" name="name" required>
+                <label for="name">Name</label>
+            </div>
+            <div class="input-box">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-box">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

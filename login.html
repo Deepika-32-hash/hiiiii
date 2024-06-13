@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-image"></div>
+</body>
+
+<style>
+    .background-image {
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-repeat: repeat;
+        width: 100vh;
+        height:100vh;
+        z-index: -10;
+        position: absolute;
+        
+    }
+</style>
+    
+
+    <header>
+        <h2 class="Resume Analyzer">Resume Analyzer</h2>
+        <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="features.html">Features</a>
+        <a href="upload.html">Upload</a>
+        <a href="contact.html">Contact</a>
+         <a href="login.html" button="btnlogin-popup">Login</button>
+    </nav>
+    </header>
+
+<div class="wrapper" id="loginFormWrapper">
+<span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+
+
+<div class="form-box Login">
+<h2>Login</h2>
+<form actions="#">
+<div class="input-box">
+    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+    <input type="email" required>
+    <label>Email</label>
+
+</div>
+<div class="input-box">
+    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+    <input type="password"required>
+    <label>password</label>
+</div>
+
+<div class="remember-forget">
+    <label><input type="checkbox">
+        Remember me</label>
+        <a href="#">Forgot Passsword?</a>
+</div>
+<button type="submit" class="btn">Login</button>
+<div class="login-register">
+    <p>Don't have an account? <a href="register.html"
+         class="register-link">"Register"</a></p>
+
+        </div>
+    </form>
+</div>
+
+
+</div>
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+       
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const loginButton = document.getElementById('loginButton');
+        const loginFormWrapper = document.getElementById('loginFormWrapper');
+        const closeButton = document.querySelector('.icon-close');
+
+        loginButton.addEventListener('click', function() {
+            loginFormWrapper.classList.add('active');
+        });
+
+        closeButton.addEventListener('click', function() {
+            loginFormWrapper.classList.remove('active');
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target === loginFormWrapper) {
+                loginFormWrapper.classList.remove('active');
+            }
+        });
+    });
+</script>
+
+    
+    
+</body>
+</html>
+
+
+
